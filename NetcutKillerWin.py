@@ -83,7 +83,7 @@ def attack(target_mac,target_ip,gw_ip):
         sendp(p1,verbose=0)
 
 if __name__ == '__main__':
-    #conf.sniff_promisc=False
+    conf.sniff_promisc=False
     os.system("cls")
     print   "###################################################"
     print    " __  __    __     __    _____   __      __  _   _"
