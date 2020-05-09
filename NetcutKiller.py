@@ -17,7 +17,7 @@ gw_ip = commands.getoutput("ip route list | grep default").split()[2]
     
 def protect(gw_ip, gw_mac):
     os.popen("arp -s %s %s" % (gw_ip, gw_mac))
-    print "Protected himself"
+    print ("Protected himself")
     
 def detect():
         ans = sniff(filter='arp', timeout=7)
